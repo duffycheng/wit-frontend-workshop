@@ -1,0 +1,11 @@
+composer.lock
+vendor/
+.composer/
+
+.DS_Store
+
+.sass-cache/
+compass_app_log.txt
+
+page_pei/
+front-end-lesson-final/

@@ -1,0 +1,63 @@
+<!-- 
+增加 javascript 互動
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>This is a demo page</title>
+	<style type="text/css" media="screen">
+		h1 {
+		  font-size: 20px;
+		  border-bottom: 1px solid #cccccc;
+		}
+
+		p {
+		  padding: 10px;
+		  background-color: papayaWhip;
+		}
+		.special {
+		  border: 1px solid green;
+		}
+		#user-name {
+		  font-weight: bold;
+		}
+</style>
+<!-- jQuery
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	  /* Add code from the next steps here */
+	  $("#copyright").click(function(){ 
+		  $(this).css('color','red'); 
+		});
+	});
+</script> -->
+<!-- native javascript 
+<script type="text/javascript">
+function init(){
+	var copyright = document.getElementById("copyright");
+	copyright.addEventListener("click", function(event){
+		this.style.color = "red";
+	});
+}-->
+</script>
+</head>
+<!-- <body onload="init()"> -->
+<body>
+<h1>Hello <em>World</em>!</h1>
+<p class="special">My name is
+  <span id="user-name">Rachel</span>
+</p>
+<p>I like:</p>
+<ul>
+  <li>Polka Dots</li>
+  <li>Soccer</li>
+  <li>Programming</li>
+</ul>
+<p>I hear RailsBridge needs volunteers, should I volunteer!?!</p>
+<footer id="copyright">
+	Copyright &copy; 2015 @ Frontend Workshop
+</footer>
+</body>
+</html>

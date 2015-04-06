@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>RailsBridge Frontend Course</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>RailsBridge 前端課程</h1>
+					<h3>完全新手指南</h3>
+					<p>
+						<small><a href="https://www.facebook.com/pei.w.cheng" target="_blank">Pei Cheng</a> 根據 <a href="http://docs.railsbridge.org/frontend/frontend" target="_blank">線上教材</a> 製作</small>
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2>目標</h2>
+						<p><img src="images/page_sample.jpg" alt=""></p>
+					</section>
+					<section>
+						<h2>建立環境</h2>
+						<ol>
+							<li>瀏覽器</li>
+							<li>文字編輯器</li>
+						</ol>
+					</section>
+					<section>
+						<h2>目標</h2>
+						<ol>
+							<li>HTML - 網頁結構</li>
+							<li>CSS - 調整排版與樣式</li>
+							<li>Javascript - 互動</li>
+						</ol>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What is HTML?</h2>
+						<p>HTML 是 Hyper-text Markup Language 的縮寫</p>
+						<p>超文件標示語言</p>
+					</section>
+					<section>
+						<h2>Hello World!</h2>
+						<ol>
+							<li>確認你有瀏覽器</li>
+							<li>下載文字編輯器 - Submline Text - http://www.sublimetext.com/3</li>
+							<li>Let's coding!</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>HTML Tag</h2>
+					<p>Tag 用來決定文字代表什麼</p>
+					<p>巢狀結構</p>
+					<p>Hi, I am <em>Pei</em></p>
+					<pre><code data-trim>
+<p>Hi, I am <em>Pei</em></p>
+					</code></pre>
+					</section>
+					<section>
+						<h2>常見 HTML tag</h2>
+						<table align="center" border="1" cellpadding="3" cellspacing="0">
+							<tbody><tr>
+							<th>Tag</th>
+							<th>Purpose</th>
+							</tr>
+							<tr>
+							<td>a</td>
+							<td>A link (the 'a' stands for Anchor)</td>
+							</tr>
+							<tr>
+							<td>h1-h6</td>
+							<td>Various headers, h1 is the most important, h6 the least.</td>
+							</tr>
+							<tr>
+							<td>ul</td>
+							<td>Start a bulleted list (an 'unordered list')</td>
+							</tr>
+							<tr>
+							<td>ol</td>
+							<td>Start a numbered list (an 'ordered list')</td>
+							</tr>
+							<tr>
+							<td>li</td>
+							<td>A single thing within a list (a 'list item')</td>
+							</tr>
+							<tr>
+							<td>table, tr, td</td>
+							<td>You can make tables (like this one) with table rows and data cells</td>
+							</tr>
+							<tr>
+							<td>form</td>
+							<td>A form that can collect data from user input</td>
+							</tr>
+							<tr>
+							<td>input</td>
+							<td>A text input, a button, or a checkbox in a form</td>
+							</tr>
+							<tr>
+							<td>div</td>
+							<td>A section marker that doesn't do anything specific to the contents itself, but does make a new line after. (More on this later.)</td>
+							</tr>
+							<tr>
+							<td>span</td>
+							<td>Another section marker that doesn't do anything to its contents, but is inline - it does not make a new line after.</td>
+							</tr>
+							</tbody></table>
+					</section>
+					<section>
+						<h2>HTML5 語意標籤</h2>
+						<table align="center" border="1" cellpadding="3" cellspacing="0">
+							<tbody><tr>
+							<th>Tag</th>
+							<th>Purpose</th>
+							</tr>
+							<tr>
+							<td>section</td>
+							<td>A section of a document</td>
+							</tr>
+							<tr>
+							<td>nav</td>
+							<td>A navigation section</td>
+							</tr>
+							<tr>
+							<td>header</td>
+							<td>The header for a page. (This is different from the head element, which contains metadata about the page!)</td>
+							</tr>
+							<tr>
+							<td>footer</td>
+							<td>The footer for a page</td>
+							</tr>
+							<tr>
+							<td>main</td>
+							<td>The important content on a page</td>
+							</tr>
+							<tr>
+							<td>aside</td>
+							<td>Content not essential to the main content</td>
+							</tr>
+							</tbody></table>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>CSS</h2>
+						<p><span style="color: #FF0;">C</span>ascading <span style="color: #FF0;">S</span>tyle<span style="color: #FF0;">S</span>heets - 階層式樣式表</p>
+						<p>提供樣式</p>
+						<p></p>	
+					</section>
+					<section>
+						<h2>CSS selector</h2>
+						<p><img src="images/css.png" alt="CSS selector"></p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>HTML 屬性 (Attributes)</h2>
+						<p>提供 tag 額外資訊，例如不同的表單輸入</p>
+					</section>
+					<section>
+						<h2>表單</h2>
+						<p>
+							<input type="text"><br>
+							<input type="password"><br>
+							<input type="radio" name="gender" value="boy">男生
+							<input type="radio" name="gender" value="girl">女生<br>
+							嗜好：<input type="checkbox" name="hobby" value="read">閱讀 <input type="checkbox" name="hobby" value="music">音樂 <input type="checkbox" name="hobby" value="movie">電影
+						</p>
+						<pre><code>
+<input type="text">
+<input type="password">
+<input type="radio" name="gender" value="boy">男生 <input type="radio" name="gender" value="girl">女生
+嗜好：<input type="checkbox" name="hobby" value="read">閱讀 <input type="checkbox" name="hobby" value="music">音樂 <input type="checkbox" name="hobby" value="movie">電影
+						</code></pre>
+					</section>
+					<section>
+						<h2>class &amp; id</h2>
+						<p>給 tag 名字，根據這些名字來寫 css</p>
+						<p>特定 tag -> id</p>
+						<p>一群 tag -> class</p>
+					</section>
+				</section>
+				<section>
+					<h2>DevTool</h2>
+					<p>直接打開瀏覽器吧</p>
+				</section>
+				<section>
+					<section>
+						<h2>製作頁面</h2>
+						<p>下載起始檔案</p>
+						<p>確認可以在瀏覽器開啟</p>
+					</section>
+					<section>
+						<h2>添加資訊</h2>
+						<ol>
+							<li>填入內容</li>
+							<li>加入圖片 (img tag)</li>
+							<li> 添加連結頁面內跳轉或者外連 (anchor tag)</li>
+						</ol>
+					</section>
+					<section>
+						<h2>頁面分欄</h2>
+						<p>http://zh-tw.learnlayout.com/toc.html</p>
+						<p>什麼是display</p>
+						<p>float</p>
+						<p>column 寬度設定</p>
+					</section>
+					<section>
+						<h2>增加互動</h2>
+						<p>使用javascript</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2>javascript - jQuery library</h2>
+						<ol>
+							<li>跨瀏覽器支援</li>
+							<li>selector 語法和 css 類似</li>
+							<li>提供 animation, hide...等多種 function，加速開發流程</li>
+							<li>網路上資源豐富</li>
+						</ol>
+					</section>
+					<section>
+						<h2>javascript - native javascript</h2>
+						<ol>
+							<li>不需要額外載入 Library</li>
+							<li>注意瀏覽支援</li>
+						</ol>
+					</section>
+				</section>
+				<section>
+					<section>
+					<h2>學習資源</h2>
+					<ol>
+						<li><a href="http://docs.railsbridge.org/frontend/resources">Listed Resources</a></li>
+						<li>Rails Girls Weekly - 從零開始的網頁設計- HTML & CSS基礎建設 <a href="https://www.youtube.com/channel/UCGaidly9iC-V3P6hScH95Cw" target="_blank">影片</a>, <a href="https://hackpad.com/-324--NQBJSI3iWi">共筆</a></li>
+						<li><a href="https://trello.com/b/SfJlgg4P/computer-science-learning-resource" target="_blank">computer science learning resource 電腦科學學習資源</a> from <a href="https://www.facebook.com/groups/agilecodecamp/" target="_blank">Innovatist : Agile Code Camp</a></li>
+						<li><a href="https://developers.google.com/web/fundamentals/" target="_blank">Web Fundamentals - Best practices for great multi-device web experiences</a></li>
+						<li>開發時的參考資料 <ul>
+							<li><a href="https://developer.mozilla.org/zh-TW/" target="_blank">MDN - Mozilla Developer Network</a></li>
+							<li><a href="http://caniuse.com/" target="_blank">Can I Use</a></li>
+						</ul>
+						</li>
+					</ol>
+					</section>
+					<section>
+						<h2>實體和線上活動</h2>
+						<dl>
+							<dt>Conference</dt>
+							<dd>Modern Web Conf (2015/5/15-16), JSDC (2015 下半年)...</dd>
+							<dt>Meetup</dt>
+							<dd>javascript.tw, Front-End Developers Taiwan, HTML5與CSS3在台灣, 幾乎所有 JS fraomework 都有 FB group, 可以到各社群頁面參與討論和參加活動</dd>
+						</dl>
+					</section>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
