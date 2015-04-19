@@ -50,38 +50,42 @@
 
 				<section>
 					<section>
-						<h2>目標</h2>
+						<h2>動手做</h2>
+						<p>今天帶了電腦就來玩吧</p>
 						<p><img src="images/page_sample.jpg" alt=""></p>
 					</section>
 					<section>
-						<h2>建立環境</h2>
-						<ol>
-							<li>瀏覽器</li>
-							<li>文字編輯器</li>
-						</ol>
+						<h2>今天會用到的...</h2>
+						<ul>
+							<li>瀏覽器 - Chrome</li>
+							<li>文字編輯器 - sublime Text</li>
+						</ul>
 					</section>
 					<section>
-						<h2>目標</h2>
-						<ol>
+						<h2>今天玩什麼</h2>
+						<ul>
 							<li>HTML - 網頁結構</li>
 							<li>CSS - 調整排版與樣式</li>
 							<li>Javascript - 互動</li>
-						</ol>
+						</ul>
 					</section>
 				</section>
 
 				<section>
 					<section>
 						<h2>What is HTML?</h2>
-						<p>HTML 是 Hyper-text Markup Language 的縮寫</p>
+						<p><span style="color: #FF0;">H</span>yper-<span style="color: #FF0;">T</span>ext <span style="color: #FF0;">M</span>arkup <span style="color: #FF0;">L</span>anguage</p>
 						<p>超文件標示語言</p>
+						<p class="fragment">「網頁建立和其它可在網頁瀏覽器中看到的資訊」(<a href="http://zh.wikipedia.org/wiki/HTML" target="_blank">Wiki</a>)</p>
 					</section>
 					<section>
 						<h2>Hello World!</h2>
 						<ol>
-							<li>確認你有瀏覽器</li>
+							<li>開始之前，先確認大家的環境</li>
+							<li>瀏覽器 Chrome</li>
 							<li>下載文字編輯器 - Submline Text - http://www.sublimetext.com/3</li>
 							<li>Let's coding!</li>
+							<li><a href="../demo/1-html.html" target="_blank">Demo 1 Hello World</a></li>	
 						</ol>
 					</section>
 				</section>
@@ -94,6 +98,7 @@
 					<pre><code data-trim>
 <p>Hi, I am <em>Pei</em></p>
 					</code></pre>
+					<p><a href="../demo/2-tag.html" target="_blank">Demo 2 - html tag</a></p>
 					</section>
 					<section>
 						<h2>常見 HTML tag (part 1)</h2>
@@ -158,6 +163,11 @@
 						</table>
 					</section>
 					<section>
+						<h2>HTML 頁面結構</h2>
+						<p><a href="../demo/3-page-structure.html" target="_blank"> Demo 3 - Page Structure</a></p>
+						<p>doctype, head, body</p>		
+					</section>
+					<section>
 						<h2>HTML5 語意標籤</h2>
 						<table align="center" border="1" cellpadding="3" cellspacing="0">
 							<tbody><tr>
@@ -202,6 +212,15 @@
 						<h2>CSS selector</h2>
 						<p><img src="images/css.png" alt="CSS selector"></p>
 					</section>
+					<section>
+						<h2>CSS demo</h2>
+						<a href="../demo/4-css.html" target="_blank">Demo 4 - CSS 動手玩</a>
+					</section>	
+					<section>
+						<h2>CSS reference</h2>
+						<p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">MDN CSS reference</a></p>
+						<p>使用時可搭配 <a href="http://caniuse.com/" target="_blank">Can I Use</a> 查詢瀏覽器支援</p>
+					</section>
 				</section>
 				<section>
 					<section>
@@ -229,16 +248,24 @@
 						<p>給 tag 名字，根據這些名字來寫 css</p>
 						<p>特定 tag -> id</p>
 						<p>一群 tag -> class</p>
+						<p><a href="../demo/5-attribute.html" target="_blank">Demo 5: HTML Attribute</a></p>	
 					</section>
 				</section>
 				<section>
-					<h2>DevTool</h2>
-					<p>直接打開瀏覽器吧</p>
+					<section>
+						<h2>DevTool</h2>
+						<p>直接打開瀏覽器吧</p>
+					</section>
+					<section>
+						<h2>參考資料</h2>
+						<p><a href="https://developer.chrome.com/devtools" target="_blank">https://developer.chrome.com/devtools 文件</a></p>
+						<p><a href="https://umaar.com/dev-tips/" target="_blank">Dev Tips Daily</a></p>
+					</section>
 				</section>
 				<section>
 					<section>
 						<h2>製作頁面</h2>
-						<p>下載起始檔案</p>
+						<p>下載 <a href="https://github.com/eanakashima/front-end-lesson/archive/master.zip">起始檔案</a></p>
 						<p>確認可以在瀏覽器開啟</p>
 					</section>
 					<section>
@@ -252,16 +279,17 @@
 					<section>
 						<h2>頁面分欄</h2>
 						<p>http://zh-tw.learnlayout.com/toc.html</p>
-						<p>什麼是display</p>
 						<p>float</p>
 						<p>column 寬度設定</p>
 					</section>
-					<section>
-						<h2>增加互動</h2>
-						<p>使用javascript</p>
-					</section>
+					
 				</section>
 				<section>
+				<section>
+						<h2>增加互動</h2>
+						<p>使用javascript</p>
+						<p><a href="../demo/6-js-interactive.html"target="_blank">添加 javascript</a></p>
+					</section>
 					<section>
 						<h2>javascript - jQuery library</h2>
 						<ol>
@@ -269,39 +297,55 @@
 							<li>selector 語法和 css 類似</li>
 							<li>提供 animation, hide...等多種 function，加速開發流程</li>
 							<li>網路上資源豐富</li>
+							<li><a href="/demo/7-js-jquery.html"target="_blank">jQuery vs native Javascript</a></li>
 						</ol>
 					</section>
 					<section>
 						<h2>javascript - native javascript</h2>
 						<ol>
 							<li>不需要額外載入 Library</li>
-							<li>注意瀏覽支援</li>
+							<li>注意瀏覽器支援</li>
 						</ol>
 					</section>
 				</section>
 				<section>
 					<section>
 					<h2>學習資源</h2>
-					<ol>
-						<li><a href="http://docs.railsbridge.org/frontend/resources">Listed Resources</a></li>
-						<li>Rails Girls Weekly - 從零開始的網頁設計- HTML & CSS基礎建設 <a href="https://www.youtube.com/channel/UCGaidly9iC-V3P6hScH95Cw" target="_blank">影片</a>, <a href="https://hackpad.com/-324--NQBJSI3iWi">共筆</a></li>
-						<li><a href="https://trello.com/b/SfJlgg4P/computer-science-learning-resource" target="_blank">computer science learning resource 電腦科學學習資源</a> from <a href="https://www.facebook.com/groups/agilecodecamp/" target="_blank">Innovatist : Agile Code Camp</a></li>
+					<ul>
+						<li><a href="http://docs.railsbridge.org/frontend/resources" target="_blank">Listed Resources on RailsBridge</a></li>
+						<li>Rails Girls Weekly - 從零開始的網頁設計- HTML & CSS基礎建設 <a href="https://www.youtube.com/channel/UCGaidly9iC-V3P6hScH95Cw" target="_blank">影片</a> (影片下方有共筆)</li>
+
+						<li><a href="http://zh-tw.learnlayout.com/" target="_blank">學習 CSS 版面配置</a></li>
+						<li><a href="http://flukeout.github.io/" target="_blank">CSS Diner</a> - 從餐桌上學 CSS</li>
+						
+						<li><a href="https://trello.com/b/SfJlgg4P/computer-science-learning-resource" target="_blank">computer science learning resource 電腦科學學習資源</a></li>
 						<li><a href="https://developers.google.com/web/fundamentals/" target="_blank">Web Fundamentals - Best practices for great multi-device web experiences</a></li>
-						<li>開發時的參考資料 <ul>
+						<li><a href="http://www.w3schools.com/" target="_blank">W3 Schools</a> 教學</li>
+
+						<li><a href="http://purecss3.net/doraemon/doraemon_css3.html " target="_blank">用 HTML + CSS 畫多啦 A 夢</a></li>
+						<li><a href="http://codepen.io/jakealbaugh/full/PwLXXP" target="_blank">如何用 CSS3 畫愛心 動畫版</a>,<a href="http://codepen.io/willh/full/xborwN" target="_blank">(保哥做的可用滑鼠單擊暫停版)</a> </li>
+						
+					</ul>
+					</section>
+					<section>
+						<ul>
+							<li>開發時的參考資料 <ul>
 							<li><a href="https://developer.mozilla.org/zh-TW/" target="_blank">MDN - Mozilla Developer Network</a></li>
 							<li><a href="http://caniuse.com/" target="_blank">Can I Use</a></li>
 						</ul>
 						</li>
-					</ol>
+						</ul>
 					</section>
 					<section>
 						<h2>實體和線上活動</h2>
-						<dl>
-							<dt>Conference</dt>
-							<dd>Modern Web Conf (2015/5/15-16), JSDC (2015 下半年)...</dd>
-							<dt>Meetup</dt>
-							<dd>javascript.tw, Front-End Developers Taiwan, HTML5與CSS3在台灣, 幾乎所有 JS fraomework 都有 FB group, 可以到各社群頁面參與討論和參加活動</dd>
-						</dl>
+						<div class="fragment">
+							<h3>Conference</h3>
+								<p>Modern Web Conf (2015/5/15-16), JSDC (2015 下半年)...</p>
+						</div>
+						<div class="fragment">
+							<h3>社群／聚會</h3>
+							<p>javascript.tw, Front-End Developers Taiwan, HTML5與CSS3在台灣, 幾乎所有 JS fraomework 都有 FB group, 可以到各社群頁面參與討論和參加活動</p>
+						</div>
 					</section>
 				</section>
 			</div>
